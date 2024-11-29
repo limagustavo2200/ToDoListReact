@@ -2,21 +2,27 @@
     color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    max-width: 46rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
 }
 
 .searchBar {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -1.6875rem;
+    transform: translateY(-50%);
+
 }
 
 .container_tasks {
     display: flex;
-    width: 46rem;
     margin-top: 4rem;
     flex-direction: column;
+    width: 100%;
 }
 
 .header_container_tasks {
@@ -28,28 +34,32 @@
     font-size: 0.875rem;
     margin-bottom: 1.5rem;
     font-weight: bold;
-
+    gap: 1rem;
+    width: 100%;
 }
 
 .title_and_accountant {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
-.title_and_accountant > p {
+.title_and_accountant  p {
     background: var(--gray-500);
     color: var(--gray-200);
-    opacity: 0.8;
     font-size: 0.75rem;
     font-weight: bold;
     border-radius: 40%;
     padding: 0.125rem 0.5rem;
+    width: fit-content;
+    text-align: start;
+    justify-content: left;
 }
 
 .title_created_tasks {
     color: var(--blue);
+    width:max-content;
 }
 
 
@@ -69,7 +79,6 @@
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
-
 }
 
 .text_for_zero_tasks {
@@ -85,7 +94,6 @@
     align-items: center;
     gap: 1rem;
     line-height: 0.5rem;
-
 }
 
 .info_container span {
@@ -94,4 +102,47 @@
 
 .info_container p {
     font-weight: 200;
+}
+
+/* 
+    RESPONSIVIDADE:
+*/
+
+@media (max-width: 320px) {
+    /* Ajustes para telas bem pequenas */
+  }
+  
+  /* Smartphones médios e grandes (321px a 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+    /* Ajustes para smartphones médios e grandes */
+}
+  
+  /* Tablets pequenos em modo retrato (481px a 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Ajustes para tablets pequenos */
+}
+  
+  /* Tablets grandes e pequenos laptops (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Ajustes para tablets grandes e laptops pequenos */
+}
+  
+  /* Laptops médios e desktops pequenos (1024px a 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    /* Ajustes para laptops e desktops pequenos */
+}
+  
+  /* Desktops médios (1280px a 1439px) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+    /* Ajustes para desktops médios */
+}
+  
+  /* Desktops grandes (1440px a 2559px) */
+@media (min-width: 1440px) and (max-width: 2559px) {
+    /* Ajustes para desktops grandes */
+}
+  
+  /* Telas ultra grandes (2560px e acima) */
+@media (min-width: 2560px) {
+    /* Ajustes para telas muito grandes (4K ou superiores) */
 }

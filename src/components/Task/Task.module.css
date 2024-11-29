@@ -16,7 +16,6 @@
     border: none;
     color: var(--gray-300);
     transition: color 0.8s ease;
-
 }
 
 .icon_trash button:hover {
@@ -27,5 +26,25 @@
     max-width: 100%;
     color: var(--gray-100);
     word-break: break-word; /* Quebra palavras grandes, se necessário */
-    max-width: 100%; /* Impede que ultrapasse o tamanho máximo do container */
 }
+
+.info_task_completed {
+    max-width: 100%;
+    word-break: break-word; 
+    color: var(--gray-300);
+    text-decoration: line-through;
+} 
+
+.icon_checkbox {
+    background: transparent;
+    border: 0;
+}
+
+.icon_task_notCompleted {
+    color: var(--blue);
+}
+
+.icon_task_Completed {
+    color: var(--purple-dark);
+}
+

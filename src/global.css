@@ -17,7 +17,7 @@
 }
 
 :focus {
-  outline: 2px solid var(--blue);
+  outline: transparent;
 }
 
 * {
@@ -32,7 +32,7 @@ body {
   background: var(--gray-600);
   color: var(--white);
   overflow-x: hidden; /* Desativa a rolagem horizontal */
-  width: 100%; /* Garante que o conteúdo não ultrapasse os limites */
+  width: 100vw; /* Garante que o conteúdo não ultrapasse os limites */
 }
 
 body, input, textarea, button {

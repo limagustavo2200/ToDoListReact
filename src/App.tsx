@@ -2,9 +2,9 @@ import styles from './App.module.css';
 
 import { Header } from './components/Header/Header';
 import { SearchContainer } from './components/SearchContainer/SearchContainer';
+import { Task } from './components/Task/Task';
 
 import { HiClipboardDocumentList } from "react-icons/hi2";
-import { Task } from './components/Task/Task';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -42,7 +42,7 @@ export function App() {
   } 
 
   return (
-    <div>
+    <main>
       <Header />
 
       <div className={styles.wrapper}>
@@ -57,11 +57,11 @@ export function App() {
           <div className={styles.header_container_tasks}>
             <div className={styles.title_and_accountant}>
               <h3 className={styles.title_created_tasks}>Tarefas criadas</h3>
-              <p>{tasks.length}</p>
+              <p >{tasks.length}</p>
             </div>
             <div className={styles.title_and_accountant}>
               <h3 className={styles.title_completed_tasks}>Concluídas</h3>
-              <p className={styles.count_tasks}>0</p>
+              <p className={styles.count_tasks_completed}>0</p>
             </div>
           </div>
 
@@ -88,7 +88,7 @@ export function App() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

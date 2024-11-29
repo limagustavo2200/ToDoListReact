@@ -41,7 +41,9 @@ export function SearchContainer({ addTask }: SearchContainerProps) {
 
             <button type='submit'>
                 Criar
-                <IoMdAddCircleOutline size={20}/>
+                <div className={styles.container_icon}>
+                    <IoMdAddCircleOutline size={20}/>
+                </div>
             </button>
         </form>
     )

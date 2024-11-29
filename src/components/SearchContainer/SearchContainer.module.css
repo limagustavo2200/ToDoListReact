@@ -1,9 +1,9 @@
 .searchContainer {
-    width: 46rem;
     height: 3.375rem;
     display: flex;
     justify-content: space-between;
     gap: 0.5rem;
+    width: 100%;
 }
 
 .searchContainer input {
@@ -13,9 +13,9 @@
     height: 100%;
     font-size: 1rem;
     padding: 1rem;
-    width: 39.875rem;
     outline: none;
     color: var(--gray-300);
+    width: 100%;
 }
 
 .searchContainer button {
@@ -33,5 +33,14 @@
     color: var(--gray-100);
     font-weight: bold;
     font-size: 1rem;
+}
 
+@media (max-width: 320px) {
+    .container_icon {
+        display: none;
+    }
+
+    .searchContainer button {
+        padding: 0.5rem;
+    }
 }
