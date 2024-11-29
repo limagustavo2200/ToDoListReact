@@ -21,6 +21,7 @@ export function SearchContainer({ addTask }: SearchContainerProps) {
     function handleNewTaskChange(event: ChangeEvent<HTMLInputElement>) {
         console.log(event.target.value);
         setNewMessageTask(event.target.value);
+        event.target.setCustomValidity('');   
     }
 
     function handleNewTaskInvalid(event: InvalidEvent<HTMLInputElement>) {
