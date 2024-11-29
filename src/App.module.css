@@ -1,5 +1,8 @@
 .wrapper {
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .searchBar {
@@ -7,4 +10,74 @@
     justify-content: center;
     align-items: center;
     margin-top: -1.6875rem;
+}
+
+.container_tasks {
+    display: flex;
+    width: 46rem;
+    margin-top: 4rem;
+    flex-direction: column;
+}
+
+.header_container_tasks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+
+}
+
+.title_and_accountant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title_and_accountant > p {
+    background: var(--gray-500);
+    color: var(--gray-200);
+    opacity: 0.8;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 40%;
+    padding: 0.125rem 0.5rem;
+}
+
+.title_created_tasks {
+    color: var(--blue);
+}
+
+
+.title_completed_tasks {
+    color: var(--purple);
+}
+
+.info_container {
+    border-top: solid 1px var(--gray-500);    
+    border-radius: 8px;
+    padding: 4rem auto;
+    font-size: 1rem;
+    color: var(--gray-300);
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    line-height: 0.5rem;
+    
+}
+
+.info_container span {
+    font-weight: bold;
+}
+
+.info_container p {
+    font-weight: 200;
 }
