@@ -33,6 +33,7 @@ export function App() {
     const newTask = {
       id: uuidv4(),
       message,
+      completed: false,
     };
     setTasks((prevTasks) => [...prevTasks, newTask]);
     console.log('chegou aqui no fim da adicao de task');
