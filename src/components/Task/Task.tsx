@@ -6,7 +6,6 @@ import { TaskProps } from '../../App';
 import { useState } from 'react';
 
 
-
 export function Task({ task, countTaskCompleted, setCountTaskCompleted, deleteTask }: TaskProps) {
     const [complitedTask, setCompletedTask] = useState(task.completed);
   
