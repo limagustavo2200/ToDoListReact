@@ -12,16 +12,21 @@ import { v4 as uuidv4 } from 'uuid';
 interface Task {
   id: string;
   message: string;
+  completed: boolean;
 };
 
 export interface TaskProps {
   task: Task;
   deleteTask: (id: string) => void;
+  countTaskCompleted: number;
+  setCountTaskCompleted: (newCount: number) => void;
 };
 
 export function App() {
 
   const [tasks, setTasks] = useState<Task[]>([]);
+
+  const [countTaskCompleted, setCountTaskCompleted] = useState(0);
 
 
   function addTask(message: string) {
@@ -61,7 +66,7 @@ export function App() {
             </div>
             <div className={styles.title_and_accountant}>
               <h3 className={styles.title_completed_tasks}>Concluídas</h3>
-              <p className={styles.count_tasks_completed}>0</p>
+                <p className={styles.count_tasks_completed}>{countTaskCompleted} de {tasks.length}</p>
             </div>
           </div>
 
@@ -80,6 +85,8 @@ export function App() {
                     key={task.id}
                     task={task}
                     deleteTask={deleteTask}
+                    countTaskCompleted={countTaskCompleted}
+                    setCountTaskCompleted={setCountTaskCompleted}
                   />
                 )
               })

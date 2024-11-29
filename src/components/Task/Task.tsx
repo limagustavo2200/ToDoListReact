@@ -7,17 +7,26 @@ import { useState } from 'react';
 
 
 
-export function Task({task, deleteTask}: TaskProps) {
-
-    const [complitedTask, setCompletedTask] = useState(false);
-
+export function Task({ task, countTaskCompleted, setCountTaskCompleted, deleteTask }: TaskProps) {
+    const [complitedTask, setCompletedTask] = useState(task.completed);
+  
     function handleDeleteTask() {
-        deleteTask(task.id);
+      if (complitedTask) {
+        setCountTaskCompleted(countTaskCompleted - 1);
+      }
+      deleteTask(task.id);  
     }
-
+  
     function handleFinishTask() {
-        setCompletedTask(!complitedTask);
+      setCompletedTask(!complitedTask);
+      
+      if (!complitedTask) {
+        setCountTaskCompleted(countTaskCompleted + 1);
+      } else {
+        setCountTaskCompleted(countTaskCompleted - 1);
+      }
     }
+        
 
     return (
         <div className={styles.task_container}>
