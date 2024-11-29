@@ -30,19 +30,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 
     font-size: 0.875rem;
     margin-bottom: 1.5rem;
     font-weight: bold;
     gap: 1rem;
-    width: 100%;
 }
 
 .title_and_accountant {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .title_and_accountant  p {
@@ -72,6 +72,7 @@
     border-radius: 8px;
     font-size: 1rem;
     color: var(--gray-300);
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -102,47 +103,4 @@
 
 .info_container p {
     font-weight: 200;
-}
-
-/* 
-    RESPONSIVIDADE:
-*/
-
-@media (max-width: 320px) {
-    /* Ajustes para telas bem pequenas */
-  }
-  
-  /* Smartphones médios e grandes (321px a 480px) */
-@media (min-width: 321px) and (max-width: 480px) {
-    /* Ajustes para smartphones médios e grandes */
-}
-  
-  /* Tablets pequenos em modo retrato (481px a 767px) */
-@media (min-width: 481px) and (max-width: 767px) {
-    /* Ajustes para tablets pequenos */
-}
-  
-  /* Tablets grandes e pequenos laptops (768px a 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    /* Ajustes para tablets grandes e laptops pequenos */
-}
-  
-  /* Laptops médios e desktops pequenos (1024px a 1279px) */
-@media (min-width: 1024px) and (max-width: 1279px) {
-    /* Ajustes para laptops e desktops pequenos */
-}
-  
-  /* Desktops médios (1280px a 1439px) */
-@media (min-width: 1280px) and (max-width: 1439px) {
-    /* Ajustes para desktops médios */
-}
-  
-  /* Desktops grandes (1440px a 2559px) */
-@media (min-width: 1440px) and (max-width: 2559px) {
-    /* Ajustes para desktops grandes */
-}
-  
-  /* Telas ultra grandes (2560px e acima) */
-@media (min-width: 2560px) {
-    /* Ajustes para telas muito grandes (4K ou superiores) */
 }
