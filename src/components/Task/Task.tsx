@@ -6,8 +6,12 @@ import { TaskProps } from '../../App';
 
 
 
+export function Task({task, deleteTask}: TaskProps) {
 
-export function Task({task}: TaskProps) {
+    function handleDeleteTask() {
+        deleteTask(task.id);
+    }
+
     return (
         <div className={styles.task_container}>
             
@@ -16,12 +20,14 @@ export function Task({task}: TaskProps) {
                 {/* <RiCheckboxBlankCircleLine /> */}
             </div>
 
-            <div className={styles.menssage_task}>
+            <div className={styles.message_task}>
                 <p className={styles.info_task}>{task.message}</p>
             </div>
 
             <div className={styles.icon_trash}>
-                <TbTrash size={24}/>
+                <button onClick={handleDeleteTask}>
+                    <TbTrash size={24}/>
+                </button>
             </div>
         </div>
     )

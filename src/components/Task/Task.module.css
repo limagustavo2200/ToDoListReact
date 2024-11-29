@@ -11,15 +11,21 @@
     border: solid 1px var(--gray-400);
 }
 
-.task_container > p {
-    text-align: start;
-}
-
-.icon_trash {
+.icon_trash button {
+    background: transparent;
+    border: none;
+    color: var(--gray-300);
     transition: color 0.8s ease;
 
 }
 
-.icon_trash:hover {
+.icon_trash button:hover {
     color: var(--danger);
+}
+
+.info_task {
+    max-width: 100%;
+    color: var(--gray-100);
+    word-break: break-word; /* Quebra palavras grandes, se necessário */
+    max-width: 100%; /* Impede que ultrapasse o tamanho máximo do container */
 }

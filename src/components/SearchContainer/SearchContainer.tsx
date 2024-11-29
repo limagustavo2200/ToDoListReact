@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react';
 import styles from './SearchContainer.module.css';
 import { IoMdAddCircleOutline } from "react-icons/io";
 
@@ -23,6 +23,10 @@ export function SearchContainer({ addTask }: SearchContainerProps) {
         setNewMessageTask(event.target.value);
     }
 
+    function handleNewTaskInvalid(event: InvalidEvent<HTMLInputElement>) {
+        event.target.setCustomValidity('Campo obrigatório! Preencha com alguma tarefa.');
+    }
+
     return (
         <form onSubmit={handleAddTask} className={styles.searchContainer}>
             <input 
@@ -30,6 +34,7 @@ export function SearchContainer({ addTask }: SearchContainerProps) {
                 placeholder='Adicione uma nova tarefa'
                 value={newMessageTask}
                 onChange={handleNewTaskChange}
+                onInvalid={handleNewTaskInvalid}
                 required
             />
 
