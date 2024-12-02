@@ -48,3 +48,9 @@ Este projeto está sob a licença MIT.
 🧑‍💻 Autor
 
 Gustavo Lima de Carvalho - [LinkedIn](https://www.linkedin.com/in/gustavo-lima-de-carvalho-a575361a4/) | [GitHub](https://github.com/limagustavo2200)
+
+🌐 Link do Deploy
+
+Você pode acessar o deploy do projeto no seguinte link:
+
+[https://to-do-list-react-livid-phi.vercel.app/]
