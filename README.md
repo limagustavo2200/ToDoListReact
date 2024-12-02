@@ -1,25 +1,50 @@
-# React + TypeScript + Vite
+📋 To-Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um Web App para gerenciar suas tarefas do dia a dia de forma simples e intuitiva.
 
-Currently, two official plugins are available:
+🛠️ Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React: Biblioteca JavaScript para construção de interfaces de usuário.
+Vite: Ferramenta para construção de aplicações com alta performance.
+TypeScript: Superset do JavaScript que adiciona tipos estáticos.
+CSS Modules: Técnica para estilização de componentes com escopo local.
 
-## Expanding the ESLint configuration
+🚀 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Adicionar tarefas
+Marcar tarefas como concluídas
+Remover tarefas
+Contador de tarefas pendentes e concluídas
 
-- Configure the top-level `parserOptions` property like this:
+📂 Estrutura do projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+src/
+├── components/     
+│   ├── ComponenteA/
+│   │   ├── ComponenteA.tsx
+│   │   └── ComponenteA.module.css
+│   ├── ComponenteB/
+│   │   ├── ComponenteB.tsx
+│   │   └── ComponenteB.module.css
+├── App.tsx         # Componente principal da aplicação
+└── main.tsx        # Ponto de entrada
+
+🔧 Como executar o projeto?
+
+Pré-requisitos
+Node.js (versão 16 ou superior)
+npm ou yarn (gerenciadores de pacotes)
+Passos:
+1. Clone o repositório: git clone https://github.com/limagustavo2200/toDoListReact.git
+2. Navegue até o diretório do projeto: cd toDoListReact
+3. Instale as dependências: npm install
+4. Inicie o servidor de desenvolvimento: npm run dev
+5. Abra no navegador: http://localhost:5173
+
+📄 Licença
+
+Este projeto está sob a licença MIT.
+
+🧑‍💻 Autor
+
+Gustavo Lima de Carvalho - [LinkedIn](https://www.linkedin.com/in/gustavo-lima-de-carvalho-a575361a4/) | [GitHub](https://github.com/limagustavo2200)
